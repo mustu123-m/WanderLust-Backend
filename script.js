@@ -34,7 +34,7 @@ const validateReview=(req,resp,next)=>{
 }
 app.use(methodOverride("_method"));
 app.use(cors({
-  origin: "https://wander-lust-frontend-gwlm8ah8e-mustafa-attarwalas-projects.vercel.app",
+  origin: "https://wander-lust-frontend-nbbtslusz-mustafa-attarwalas-projects.vercel.app/",
   credentials: true
 }));
 
