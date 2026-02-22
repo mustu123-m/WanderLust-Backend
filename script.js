@@ -48,16 +48,20 @@ app.use(exp.static(path.join(__dirname,"/public"))
     secret:"supersecret",
     touchAfter:24*3600
   })
+app.set("trust proxy", 1); 
+
 app.use(session({
   store,
   secret: 'keyboard cat',
   resave: false,
-  saveUninitialized: true,
+  saveUninitialized: false,
   cookie: {
-  httpOnly: true,
-  sameSite: "lax"
-}
-}))
+    httpOnly: true,
+    secure: true,      
+    sameSite: "none",  
+    maxAge: 1000 * 60 * 60 * 24 * 7
+  }
+}));
 
 app.use(flash());
 
