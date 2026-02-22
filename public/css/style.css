@@ -1,0 +1,149 @@
+
+body{
+font-family: "Plus Jakarta Sans", sans-serif !important;
+height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.content
+{
+    flex:1;
+}
+.navbar
+{
+    height:5rem;
+}
+.fa-compass
+{
+color:#e61e4d;
+font-size: 2rem;
+
+}
+.f-info{
+    display: flex;
+    flex-direction: column;
+text-align: center;
+justify-content: space-between;
+background-color: rgb(241, 239, 236);
+  padding: 1rem;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+.fa-brands{
+    margin:5px;
+}
+
+.f-info-socials{
+    /* width: 100%; */
+     margin-top:2px ;
+}
+/* .f-info-links{ */
+    /* width:100%; */
+/* }
+.wnaderlust{ */
+    /* width:100%; */
+/* } */
+.cards{ 
+   margin: 2rem;
+}
+.listing-card
+{
+/* width:100% !important;  */
+margin:2rem !important;
+border:none !important;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.card{
+    margin-left: 2rem!important;
+}
+.card-img-top{
+    border-radius: 1rem;
+    object-fit: cover;
+}
+.card-text{
+    font-weight: 400 !important;
+    padding-left: 0;
+}
+.cards a{
+    text-decoration: none;
+}
+
+
+.listing-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.show-content{
+    width:100%;
+    /* margin-left:400px; */
+}
+.show-img{
+    width:500px;
+}
+.show-card{
+        --bs-card-border-width: none!important;
+}
+.show-card:hover{
+    transform: none;
+    box-shadow: none;
+
+}
+
+.card-body{
+    padding-left:0px;
+}
+.change-btns{
+    display: flex;
+    flex-direction: row;
+}
+.btn-1{
+    margin-left: 400px !important;
+}
+.loginbar{
+    margin-left:700px!important;
+}
+
+
+/* map */
+#map { 
+    height:400px;
+     width: 80vh; 
+     position: center;
+     margin-left
+}
+.option-icons{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem!important;
+    margin-left: 5rem!important;
+    text-align: center;
+}
+.option-icons > i {
+  margin-left: 2rem !important;
+  margin-top:1rem !important;
+  font-size: 20px!important;
+  opacity: 0.8;
+}
+.option-icons > i:hover {
+  opacity: 1!important;
+}
+.search-bar{
+margin-left:100px!important;
+
+}
+.search-btn{
+    background-color: #e61e4d;
+    color: white;
+    border-radius: 25px;
+}
+.search-btn:hover{
+     background-color: #e61e4d;
+     color: white;
+
+  
+}
+.bar-search{
+    border-radius: 25px;
+}
+
